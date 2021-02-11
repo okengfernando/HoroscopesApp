@@ -8,9 +8,10 @@ import requests
 """
 
 
-def check_sign():
-    your_birth_day = input("enter your birthday day number> ")
-    your_birth_month = input("cool, and the month number, please> ")
+def check_sign(your_birth_day,your_birth_month):
+    """Function Helps users to discover their Sign
+    """
+    
     if (int(your_birth_month) == 12 and int(your_birth_day) >= 22) or (
         int(your_birth_month) == 1 and int(your_birth_day) <= 19
     ):
@@ -63,7 +64,10 @@ def check_sign():
     return sign
 
 
+
 def horoscope(zodiac_sign: int, day: str) -> str:
+    """Helper Fuction to fetch the horoscope data
+    """
     url = (
         "https://www.horoscope.com/us/horoscopes/general/"
         f"horoscope-general-daily-{day}.aspx?sign={zodiac_sign}"
@@ -71,8 +75,39 @@ def horoscope(zodiac_sign: int, day: str) -> str:
     try:
         soup = BeautifulSoup(requests.get(url).content, "html.parser")
     except:
-        return "Connection Error"
+        return "Internet Connection Error"
     return soup.find("div", class_="main-horoscope").p.text
+
+
+def date_selector():
+    """
+    This function helps fetch hoscropes based on date and is parsed 
+    into the function above
+    """
+    try:
+        options = f"""
+        choose a day(1-3)
+        --------------------
+        1.Yesterday
+        2.Today
+        3.Tomorrow"""
+
+        print(options)
+        day = int(input("Enter the number representation of the options :"))
+
+        if day == 1:
+            str_day = 'yesterday'
+        elif day == 2:
+            str_day = 'today'
+        elif day == 3:
+            str_day = 'tomorrow'
+        else:
+            print("Enter valid option")
+    except (TypeError,ValueError,NameError):
+        sys.exit("Try agin with a valid input")
+
+    return str_day
+
 
 
 
