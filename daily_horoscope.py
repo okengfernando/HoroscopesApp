@@ -9,7 +9,8 @@ import requests
 
 
 def check_sign(your_birth_day,your_birth_month):
-    """Function Helps users to discover their Sign
+    """Function Helps users to discover their Sign based on
+    day of birth(1-31) in str and month of birth(1-12) in int
     """
     
     if (int(your_birth_month) == 12 and int(your_birth_day) >= 22) or (
