@@ -81,6 +81,7 @@ def horoscope(zodiac_sign: int, day: str) -> str:
 
 
 def date_selector():
+    
     """
     This function helps fetch hoscropes based on date and is parsed 
     into the function above
