@@ -44,6 +44,8 @@ elif zodiac_sign == 0:
     horoscope_text = daily_horoscope.horoscope(your_birth_month, new_day)
     print(horoscope_text)
 
+def validator():
+    pass
     
 
     
