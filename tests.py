@@ -14,7 +14,7 @@ class Test_Horoscope_Methods(unittest.TestCase):
     def test_models(self):
         pass 
 
-    def test_api_cron_job():
+    def test_api_cron_job(self):
         pass
   
     def test_check_sign(self):
