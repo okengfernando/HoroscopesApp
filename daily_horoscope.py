@@ -78,7 +78,13 @@ def horoscope(zodiac_sign: int, day: str) -> str:
         soup = BeautifulSoup(requests.get(url).content, "html.parser")
     except:
         return "Internet Connection Error, Check connection and Try Again!!"
-    return soup.find("div", class_="main-horoscope").p.text
+
+    message = soup.find("div", class_="main-horoscope").p.text 
+
+    print(" ")
+    print("****************************************************MESSAGE***************************************")
+    return message
+    print("**************************************************************************************************")
 
 
 def date_selector():
