@@ -30,6 +30,7 @@ if __name__ == "__main__":
         "11. Aquarius\n",
         "12. Pisces\n",
         "\nor if you're not sure about you sign, type 0",
+        
     )
 try:
     zodiac_sign = int(input("Please Enter valid number from the options given : "))
