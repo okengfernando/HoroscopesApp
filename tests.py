@@ -17,6 +17,45 @@ class Test_Horoscope_Methods(unittest.TestCase):
     def test_Horoscope_dipslay(self):
         self.assertTrue(type(daily_horoscope.horoscope(9,'today')) == str)
     
+    def test_Horoscope_dipslay(self):
+        self.assertTrue(type(daily_horoscope.horoscope(9,'tomorrow')) == str)
+    
+    def test_Horoscope_dipslay(self):
+        self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
+    
+    def test_Horoscope_dipslay(self):
+        self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
+    
+    def test_Horoscope_dipslay(self):
+        self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
+    
+    def test_Horoscope_dipslay(self):
+        self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
+    
+    def test_Horoscope_dipslay(self):
+        self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
+    
+    def test_Horoscope_dipslay(self):
+        self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
+    
+    def test_Horoscope_dipslay(self):
+        self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
+    
+    def test_Horoscope_dipslay(self):
+        self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
+    
+    def test_Horoscope_dipslay(self):
+        self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
+    
+    def test_Horoscope_dipslay(self):
+        self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
+    
+    def test_Horoscope_dipslay(self):
+        self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
+    
+    def test_ignore(self):
+        pass
+    
     
   
 if __name__ == '__main__': 
