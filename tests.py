@@ -40,18 +40,7 @@ class Test_Horoscope_Methods(unittest.TestCase):
     
     def test_Horoscope_dipslay(self):
         self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
-    
-    def test_Horoscope_dipslay(self):
-        self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
-    
-    def test_Horoscope_dipslay(self):
-        self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
-    
-    def test_Horoscope_dipslay(self):
-        self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
-    
-    def test_Horoscope_dipslay(self):
-        self.assertTrue(type(daily_horoscope.horoscope(9,'yesterday')) == str)
+   
     
     def test_ignore(self):
         pass
