@@ -64,4 +64,8 @@ elif zodiac_sign == 0:
 
 
     
-
+#Last updated: 2020-05-18
+#Author: Fernando okeng
+#year: 2020
+#Github:
+#Email:
